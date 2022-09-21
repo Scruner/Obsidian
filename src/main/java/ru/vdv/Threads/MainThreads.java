@@ -18,7 +18,7 @@ class T1 implements Runnable {
   @Override
   public void run() {
     System.out.println(Thread.currentThread()
-                             .getName() + " отработал поток T1");
+        .getName() + " отработал поток T1");
   }
 }
 
@@ -34,7 +34,7 @@ class T2 implements Runnable {
       throw new RuntimeException(e);
     }
     System.out.println(Thread.currentThread()
-                             .getName() + " отработал поток T2");
+        .getName() + " отработал поток T2");
   }
 }
 
@@ -50,6 +50,6 @@ class T3 implements Runnable {
       throw new RuntimeException(e);
     }
     System.out.println(Thread.currentThread()
-                             .getName() + " отработал поток T3");
+        .getName() + " отработал поток T3");
   }
 }

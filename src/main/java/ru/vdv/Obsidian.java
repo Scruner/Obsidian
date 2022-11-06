@@ -2,9 +2,24 @@ package ru.vdv;
 
 public class Obsidian {
 
-  public static void main(String[] args) {
-    System.out.println("VDV!!!");
+  public Object obj;
 
+  public static void main(String[] args)
+      throws ClassNotFoundException, NoSuchFieldException {
+
+    // returns the Class object for this class
+    Class myClass = Class.forName("Obsidian");
+
+    System.out.println("Class represented by myClass: "
+                           + myClass.toString());
+
+    String fieldName = "obj";
+
+    // Get the field of myClass
+    // using getField() method
+    System.out.println(
+        fieldName + " Field of myClass: "
+            + myClass.getField(fieldName));
   }
 }
 
